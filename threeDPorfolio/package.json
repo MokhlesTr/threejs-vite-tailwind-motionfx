@@ -2,7 +2,7 @@
   "name": "threedporfolio",
   "private": true,
   "version": "0.0.0",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,15 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@react-three/drei": "^10.0.2",
-    "@react-three/fiber": "^9.0.4",
-    "@react-three/postprocessing": "^3.0.4",
-    "@studio-freight/lenis": "^1.0.42",
-    "framer-motion": "^12.4.7",
-    "postprocessing": "^6.36.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-icons": "^5.5.0",
     "react-router-dom": "^7.2.0"
   },
   "devDependencies": {
