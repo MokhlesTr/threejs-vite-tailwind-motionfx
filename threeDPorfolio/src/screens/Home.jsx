@@ -198,7 +198,7 @@ export default function Home() {
               whileTap={{ scale: 0.95 }}
               onClick={scrollToVisualization}
             >
-              Analytics Dashboard
+              My Skills
             </motion.button>
           </div>
         </motion.div>
@@ -400,7 +400,7 @@ export default function Home() {
                 whileTap={{ scale: 0.95 }}
                 onClick={scrollToVisualization}
               >
-                View Performance Metrics
+                View My Skills
               </motion.button>
             </motion.div>
           </div>
@@ -418,7 +418,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl font-bold text-center mb-12">
-              AI <span className="text-purple-400">Performance Analytics</span>
+              My <span className="text-purple-400">Technical Skills</span>
             </h2>
             
             <Suspense fallback={<LoadingPlaceholder />}>
@@ -428,19 +428,19 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
               {[
                 {
-                  title: "Real-time Learning",
-                  description: "Watch as the AI model improves over time, adapting to new data patterns and optimizing its prediction accuracy.",
-                  icon: "📈"
+                  title: "Front-End Expertise",
+                  description: "Mastery in creating responsive, modern interfaces with React, Three.js and advanced CSS animations.",
+                  icon: "🎨"
                 },
                 {
-                  title: "Interactive Exploration",
-                  description: "Hover over data points to see detailed comparisons between predicted values and actual outcomes.",
-                  icon: "🔍"
+                  title: "Mobile Development",
+                  description: "Building cross-platform mobile applications with React Native and Expo that deliver native-like performance.",
+                  icon: "📱"
                 },
                 {
-                  title: "Confidence Metrics",
-                  description: "Visualize the AI's confidence level in its predictions, illuminating the decision-making process.",
-                  icon: "🎯"
+                  title: "Back-End Solutions",
+                  description: "Creating robust APIs and server architectures using Node.js, Express, and various database technologies.",
+                  icon: "⚙️"
                 }
               ].map((feature, i) => (
                 <motion.div 
