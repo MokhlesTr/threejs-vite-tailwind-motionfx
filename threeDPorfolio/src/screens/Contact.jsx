@@ -6,10 +6,9 @@ import { FaLinkedin, FaTwitter, FaGithub, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt
 import emailjs from '@emailjs/browser';
 
 // EmailJS configuration constants
-// Replace these with your actual EmailJS service, template and user IDs
-const EMAILJS_SERVICE_ID = "service_xxxxxxx"; // Update with your actual service ID
-const EMAILJS_TEMPLATE_ID = "template_xxxxxxx"; // Update with your actual template ID
-const EMAILJS_PUBLIC_KEY = "public_key_xxxxxxx"; // Update with your actual public key
+const EMAILJS_SERVICE_ID = "service_ww67job";
+const EMAILJS_TEMPLATE_ID = "template_eofkaul";
+const EMAILJS_PUBLIC_KEY = "0DGS6JZFXutETtzfP";
 const RECIPIENT_EMAIL = "mokhlestarmiz001@gmail.com";
 
 export default function Contact() {

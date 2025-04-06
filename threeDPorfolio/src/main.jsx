@@ -6,8 +6,8 @@ import { BrowserRouter } from 'react-router-dom'
 import emailjs from '@emailjs/browser';
 
 // Initialize EmailJS with your public key
-// Replace with your actual public key
-emailjs.init("public_key_xxxxxxx");
+// Get this from your EmailJS dashboard
+emailjs.init("0DGS6JZFXutETtzfP");
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
