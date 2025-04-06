@@ -1,0 +1,30 @@
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* Use a more specific selector to avoid affecting all text-lg elements */
+.typing-animation {
+  animation: typing 7s steps(80) 6s forwards infinite;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Fix for background issues with Canvas */
+canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Responsive design helpers */
+@media (max-width: 768px) {
+  .typing-animation {
+    white-space: normal;
+    animation: none;
+  }
+}

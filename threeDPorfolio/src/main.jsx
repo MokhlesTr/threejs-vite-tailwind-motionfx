@@ -1,12 +1,18 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
-import App from "./App.jsx";
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import './index.css'
+import { BrowserRouter } from 'react-router-dom'
+import emailjs from '@emailjs/browser';
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
+// Initialize EmailJS with your public key
+// Replace with your actual public key
+emailjs.init("public_key_xxxxxxx");
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </StrictMode>
-);
+  </React.StrictMode>,
+)

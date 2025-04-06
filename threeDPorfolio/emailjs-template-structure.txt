@@ -1,0 +1,42 @@
+EmailJS Template Structure for Contact Form
+
+When setting up your EmailJS account:
+
+1. Sign up at emailjs.com
+2. Create a service (Gmail, Outlook, etc.)
+3. Create an email template with these template variables:
+
+Template variables to include:
+- {{from_name}} - Sender's name
+- {{reply_to}} - Sender's email address
+- {{subject}} - Email subject
+- {{message}} - The message content
+- {{to_email}} - Your email address (mokhlestarmiz001@gmail.com)
+
+Example template content:
+---------------------------------------
+You have received a new message from: {{from_name}}
+
+Email: {{reply_to}}
+Subject: {{subject}}
+
+Message:
+{{message}}
+
+---------------------------------------
+
+4. After creating the template, get your:
+   - Service ID
+   - Template ID
+   - Public Key
+
+5. Replace the placeholder values in src/screens/Contact.jsx:
+   - EMAILJS_SERVICE_ID = "service_xxxxxxx" → Your service ID
+   - EMAILJS_TEMPLATE_ID = "template_xxxxxxx" → Your template ID
+   - EMAILJS_PUBLIC_KEY = "public_key_xxxxxxx" → Your public key
+
+6. Also replace the public key in src/main.jsx:
+   - emailjs.init("public_key_xxxxxxx") → Your public key
+
+Make sure to keep your public key in the client-side code, but never include
+private keys or account credentials. 
